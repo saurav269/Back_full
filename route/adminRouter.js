@@ -11,7 +11,7 @@ adminRoutes.post("/add", async (req, res) => {
 
     await new_product.save();
 
-    res.send({ msg: "Doctors has been save" });
+    res.send({ msg: "Doctors has been saved" });
   } catch (err) {
     res.send({ msg: "invalid" });
   }
